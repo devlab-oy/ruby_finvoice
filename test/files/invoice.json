@@ -1,0 +1,71 @@
+{
+  "invoice": {
+    "number": "2013000018",
+    "date": "2013-08-14",
+    "due_date": "2015-02-22",
+    "terms": "14 pv netto",
+    "reference_number": "RF471234567890",
+    "total_amount": "133.50",
+    "total_amount_with_tax": "165.54",
+    "total_tax_amount": "32.04",
+    "invoice_url_name": "APIX_PDFFILE",
+    "invoice_url_text": "file://test_invoice.pdf"
+  },
+  "seller": {
+    "bid": "9876543-0",
+    "vat_number": "FI98765430",
+    "name": ["Pullin Musiikki oy", "Pullis Musik Ab"],
+    "address": "StreetName 99",
+    "city": "Helsinki",
+    "zipcode": "00100",
+    "country_code": "FI",
+    "bank_name": "Nordea",
+    "bic": "BANKFIHH",
+    "iban": "FI3329501800008512"
+  },
+  "buyer": {
+    "bid": "7654321-2",
+    "vat_number": "FI76543212",
+    "name": "Purjehdusseura Bitti ja Baatti ry",
+    "address": "Sempalokatu 2",
+    "city": "Tampere",
+    "zipcode": "00122",
+    "country_code": "FI"
+  },
+  "rows": [
+    {
+      "sku": "12",
+      "description": "Nuottivihko",
+      "quantity": "89",
+      "price": "1.5",
+      "comment": "Puuttuvat tuotteet toimitetaan mahdollisimman pian",
+      "tax": "24.0",
+      "total_amount": "133.50",
+      "total_amount_with_tax": "165.54",
+      "total_tax_amount": "32.04"
+    },
+    {
+      "sku": "12",
+      "description": "Nuottivihko",
+      "quantity": "89",
+      "price": "1.5",
+      "comment": "Puuttuvat tuotteet toimitetaan mahdollisimman pian",
+      "tax": "14.0",
+      "total_amount": "133.50",
+      "total_amount_with_tax": "165.54",
+      "total_tax_amount": "32.04"
+    },
+    {
+      "sku": "12",
+      "description": "Nuottivihko",
+      "quantity": "89",
+      "price": "1.5",
+      "comment": "Puuttuvat tuotteet toimitetaan mahdollisimman pian",
+      "tax": "14.0",
+      "total_amount": "133.50",
+      "total_amount_with_tax": "165.54",
+      "total_tax_amount": "32.04"
+    }
+  ]
+
+}
