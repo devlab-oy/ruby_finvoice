@@ -7,10 +7,14 @@ PATH
 GEM
   remote: https://rubygems.org/
   specs:
+    codeclimate-test-reporter (0.6.0)
+      simplecov (>= 0.7.1, < 1.0.0)
+    docile (1.1.5)
     domain_name (0.5.20160216)
       unf (>= 0.0.5, < 1.0.0)
     http-cookie (1.0.2)
       domain_name (~> 0.5)
+    json (2.0.1)
     mime-types (2.99.1)
     mini_portile2 (2.0.0)
     minitest (5.8.4)
@@ -22,6 +26,11 @@ GEM
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 3.0)
       netrc (~> 0.7)
+    simplecov (0.12.0)
+      docile (~> 1.1.0)
+      json (>= 1.8, < 3)
+      simplecov-html (~> 0.10.0)
+    simplecov-html (0.10.0)
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.7.2)
@@ -31,10 +40,11 @@ PLATFORMS
 
 DEPENDENCIES
   bundler
+  codeclimate-test-reporter
   finvoice201!
   minitest
   rake
   rest-client
 
 BUNDLED WITH
-   1.11.2
+   1.12.5

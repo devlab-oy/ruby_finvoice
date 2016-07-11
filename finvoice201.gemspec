@@ -16,4 +16,5 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'rake'
   s.add_development_dependency 'minitest'
   s.add_development_dependency 'rest-client'
+  s.add_development_dependency 'codeclimate-test-reporter'
 end
