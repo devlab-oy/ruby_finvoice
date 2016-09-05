@@ -1,4 +1,8 @@
 {
+  "from_identifier": "1234567890",
+  "from_intermediator": "HELSFIHH",
+  "to_identifier": "0987654321",
+  "to_intermediator": "BANKFIHH",
   "invoice": {
     "number": "2013000018",
     "date": "2013-08-14",
