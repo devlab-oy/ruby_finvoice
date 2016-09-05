@@ -48,11 +48,11 @@ module Finvoice201
     end
 
     def add_from_identifier(context)
-      context.FromIdentifier    "0987654321"
+      context.FromIdentifier @invoice.dig(:from_identifier)
     end
 
     def add_from_intermediator(context)
-      context.FromIntermediator "1234567890"
+      context.FromIntermediator @invoice.dig(:from_intermediator)
     end
 
     def add_message_sender_details(context)
@@ -67,8 +67,8 @@ module Finvoice201
         add_message_sender_details context
 
         context.MessageReceiverDetails do |message_receiver_details|
-          message_receiver_details.ToIdentifier "1234567890"
-          message_receiver_details.ToIntermediator "1234567890"
+          message_receiver_details.ToIdentifier @invoice.dig(:to_identifier)
+          message_receiver_details.ToIntermediator @invoice.dig(:to_intermediator)
         end
 
         context.MessageDetails do |message_details|
@@ -168,6 +168,7 @@ module Finvoice201
         invoice_details.InvoiceTotalVatIncludedAmount amount(@invoice.dig :invoice, :total_amount_with_tax), currency_identifier
 
         add_vat_specification_details                 invoice_details
+        invoice_details.InvoiceFreeText               @invoice.dig(:invoice, :comment)
         add_payment_terms_details                     invoice_details
       end
     end
