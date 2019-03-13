@@ -1,4 +1,6 @@
 # lib/finvoice/document.rb
+require "time"
+
 module Finvoice201
   class Document
     def initialize(invoice)
